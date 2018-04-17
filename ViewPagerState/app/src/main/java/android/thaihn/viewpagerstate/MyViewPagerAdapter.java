@@ -3,9 +3,12 @@ package android.thaihn.viewpagerstate;
 import android.support.annotation.Nullable;
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentManager;
-import android.support.v4.app.FragmentStatePagerAdapter;
+import android.support.v4.app.FragmentPagerAdapter;
+import android.thaihn.viewpagerstate.fragment.ContactFragment;
+import android.thaihn.viewpagerstate.fragment.HomeFragment;
+import android.thaihn.viewpagerstate.fragment.SettingFragment;
 
-public class MyViewPagerAdapter extends FragmentStatePagerAdapter {
+public class MyViewPagerAdapter extends FragmentPagerAdapter {
     public static final int NUM_PAGER = 3;
 
     public MyViewPagerAdapter(FragmentManager fm) {

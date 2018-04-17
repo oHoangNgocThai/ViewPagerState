@@ -1,9 +1,10 @@
-package android.thaihn.viewpagerstate;
+package android.thaihn.viewpagerstate.fragment;
 
 
 import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.support.v4.app.Fragment;
+import android.thaihn.viewpagerstate.R;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -13,13 +14,13 @@ import android.widget.TextView;
 /**
  * A simple {@link Fragment} subclass.
  */
-public class SettingFragment extends Fragment {
+public class ContactFragment extends Fragment {
 
     private int mPage;
     private String mTitle;
     private TextView mText;
 
-    public SettingFragment() {
+    public ContactFragment() {
         // Required empty public constructor
     }
 
@@ -30,15 +31,14 @@ public class SettingFragment extends Fragment {
      * @param title
      * @return
      */
-    public static SettingFragment newInstance(int page, String title) {
-        SettingFragment settingFragment = new SettingFragment();
+    public static ContactFragment newInstance(int page, String title) {
+        ContactFragment contactsFragment = new ContactFragment();
         Bundle args = new Bundle();
         args.putInt("page", page);
         args.putString("title", title);
-        settingFragment.setArguments(args);
-        return settingFragment;
+        contactsFragment.setArguments(args);
+        return contactsFragment;
     }
-
 
     @Override
     public void onCreate(@Nullable Bundle savedInstanceState) {
@@ -51,8 +51,9 @@ public class SettingFragment extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
-        View rootView = inflater.inflate(R.layout.fragment_setting, container, false);
+        View rootView = inflater.inflate(R.layout.fragment_contact, container, false);
         mText = (TextView) rootView.findViewById(R.id.text);
+
         return rootView;
     }
 

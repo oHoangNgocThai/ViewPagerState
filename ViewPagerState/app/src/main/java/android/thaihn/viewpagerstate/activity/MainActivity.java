@@ -1,10 +1,13 @@
-package android.thaihn.viewpagerstate;
+package android.thaihn.viewpagerstate.activity;
 
 import android.support.design.widget.TabLayout;
 import android.support.v4.view.ViewPager;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.support.v7.widget.Toolbar;
+import android.thaihn.viewpagerstate.DepthPageTransformer;
+import android.thaihn.viewpagerstate.MyViewPagerAdapter;
+import android.thaihn.viewpagerstate.R;
 
 public class MainActivity extends AppCompatActivity {
 
